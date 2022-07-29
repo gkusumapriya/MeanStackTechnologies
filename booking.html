@@ -1,0 +1,37 @@
+<html>
+<head>
+<script language="javascript">
+var t,d;
+var tc=150;
+window.alert("Cost per Ticket is 150/-");
+t=parseInt(window.prompt("Enter no.of Tickets"));
+if(t>5)
+{
+	window.alert("Booking is not possible");
+}
+else if(t>=1 && t<=2)
+{
+	tc=tc*t;
+	document.write("<h2 style='color:green'>Total Cost is:</h2>");
+	document.write("<h2>");
+	document.write(tc);
+	document.write("</h2>");
+}
+else
+{
+	tc=tc*t;
+	document.write("<h2 style='color:green'>Total Cost is:</h2>");
+	document.write("<h2>");
+	document.write(tc);
+	document.write("</h2>");
+	d=tc*0.05;
+   tc=tc-d;
+	document.write("<h2 style='color:red'>Total Cost after 5% DISCOUNT is:</h2>");
+	document.write("<h2>");
+	document.write(tc);
+	document.write("</h2>");
+}
+</script>
+</head>
+<body bgcolor="skyblue"></body>
+</html>
