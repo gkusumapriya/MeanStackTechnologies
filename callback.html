@@ -1,0 +1,23 @@
+<html>
+<body>
+<h1 id="d"></h1>
+<h2 id="demo"> </h2>
+<script>
+	a=parseInt(window.prompt("Enter a value:"));
+	b=parseInt(window.prompt("Enter b value:"));
+	function add(a,b,callback)
+	{
+		document.getElementById("d").innerHTML=a+b;
+		callback();
+	}
+	function f3()
+	{
+		var d=new Date();
+		document.getElementById("demo").innerHTML=d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+	}
+	add(a,b,f3);	
+</script>
+</body>
+<html>
+
+	
