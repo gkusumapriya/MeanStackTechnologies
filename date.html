@@ -1,0 +1,15 @@
+<html>
+<head>
+<script>
+const days=["sun","mon","tue","wed","thur","fri","sat"];
+const months=["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"];
+var d=new Date();
+document.write("Date"+d+"<br>");
+var day=d.getDay();
+document.write("<h2 style='background-color:lightpink' >Day is </h2>"+(day+1)+" "+days[day]+"<br>");
+var mon=d.getMonth();
+document.write("<h2 style='background-color:lightblue' >Month is</h2>"+(mon+1)+" "+months[mon]+"<br>");
+document.write("<h2 style='background-color:lightyellow' >Year is</h2>"+d.getFullYear());
+</script>
+</head>
+</html>

@@ -1,0 +1,22 @@
+<html>
+<body>
+<script>
+	var n,p;
+	n=window.prompt("enter no of tickets","");
+	if(n==0 ||n==1||n==2)
+	{
+		 p=n*150;
+		document.write(" <h2 style='background-color:blue' >Total cost is </h2>"+p);
+	}
+	else if(n>=6)
+	{
+		document.write("<h2 style='background-color:blue' >Booking is not allowed</h2>");
+	}
+	else if(n==3 || n==4 || n==5)
+	{
+		p=(n*150)*0.1;
+		document.write(" <h2 style='background-color:red' >Total cost is</h2> "+p);
+	}
+</script>
+</body>
+</html>

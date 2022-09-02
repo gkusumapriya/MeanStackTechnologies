@@ -1,0 +1,23 @@
+<html>
+<body>
+<script>
+var n,p,f;
+n=parseInt(window.prompt("Enter no of tickets"));
+f=window.prompt("Is it a Festive Season?(true/false)");
+if((n>=15) || (n<=0)){
+document.write("<h2 style='background-color:red' >Cannot book tickets</h2>");
+}
+else{
+if(f=="true"){
+p=(n*150);
+p=(p*0.1);
+document.write(" <h2 style='background-color:red' >Total price with discount is:</h2>"+p);
+}
+else{
+p=(n*150);
+document.write("<h2 style='background-color:red' >Total price without discount is:</h2>"+p);
+}
+}
+</script>
+</body>
+</html>
