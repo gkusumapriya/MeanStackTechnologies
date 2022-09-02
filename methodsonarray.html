@@ -1,0 +1,25 @@
+<html>
+<body>
+<script>
+	a=new Array(1,9,7,4,5);
+	b=new Array("A","H","E","C","D");
+	document.write("Array is:"+a+"<br>");
+	document.write("Sorted array:"+a.sort()+"<br>");//sorting an array
+	document.write("Joining array using join() method : "+a.join("*")+"<br>");//join()method
+	a.push(2);
+	document.write("pushed element is:"+a[a.length-1]+"<br>");
+	document.write("Sorted array:"+a.sort()+"<br>");
+	document.write("popped element is:"+a.pop()+"<br>");
+	a.shift();
+	document.write("Shifting the array:"+a+"<br>");
+	a.unshift(8);
+	document.write("Unshifting the array:"+a+"<br>");
+	document.write("Sorted array:"+a.sort()+"<br>");
+	document.write("Sorted array:"+b.sort()+"<br>");
+	document.write("Adding/Concating a single element to the array :"+b.concat("B")+"<br>");
+	document.write("Array b is:"+b+"<br>");
+	document.write("Sorting after concatenating an elemen,array is:"+b.sort()+"<br>");
+	document.write("Concatenation of arrays:"+a.concat(b));
+</script>
+</body>
+</html>
